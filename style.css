@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color:#f0f2f5 !important;
+}
+.header
+{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 70vh);
+    filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
+.header .img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.floatProfileDetails
+{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 100%;
+}
+.floatProfileDetails .leftprofilesection .img
+{
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    width: 279px;
+    height: 231px;
+}
+.leftprofilesection
+{
+    top: -100px;
+    width: 279px !important;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+    transition: 0.5s ease;
+}
+.leftprofilesection:hover
+{
+    transform: scale(1.01);
+}
+.about
+{
+    background-color:#fff;
+    width: 100%;
+}
+.text-gray
+{
+    color: rgb(158, 158, 158);
+}
+
+.btn.active , .menu-sec .btn:hover
+{
+    color:#5ea8dd;
+    border-radius: 5px;
+    border-left:2px solid #5ea8dd;
+}
+.menu-sec
+{
+    top:0;
+    z-index: 999;
+}
+.renderingData.container
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    display: flex;
+    width: 50%;
+}
+.cards
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+.renderingData.container .cards .User_details img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.bgcover-img
+{
+    height: 30vh;
+    width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.job_active
+{
+    padding: 10px;
+    margin:0 5px 0 5px;
+    border-radius: 5px;
+    width: 150px;
+    height:50px;
+}
+@media only screen and (max-width:765px)
+{
+    .renderingData.container
+    {
+        width: 100%;
+    }
+}
